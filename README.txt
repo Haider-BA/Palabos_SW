@@ -1,3 +1,7 @@
-This is the first version.
+This is the original Palabos code of version v1.5r1
 
-add in master branch
+The home website of Palabos is http://www.palabos.org/
+
+This is a library under GPLv3 and any later version
+
+
