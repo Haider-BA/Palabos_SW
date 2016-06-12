@@ -37,13 +37,11 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c99" />
 			<Add directory="../src" />
 			<Add directory="../externalLibraries" />
 		</Compiler>
-		<Unit filename="../../externalRhoJcollideAndStream3D.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="../examples/showCases/externalFlowAroundObstacle/externalFlowAroundObstacle.cpp" />
+		<Unit filename="../examples/CImplementationTest/externalFlowAroundObstacle/externalFlowAroundObstacle.cpp" />
 		<Unit filename="../externalLibraries/Eigen/src/Cholesky/CholeskyInstantiations.cpp" />
 		<Unit filename="../externalLibraries/Eigen/src/Core/CoreInstantiations.cpp" />
 		<Unit filename="../externalLibraries/Eigen/src/QR/QrInstantiations.cpp" />
@@ -70,6 +68,20 @@
 		<Unit filename="../src/atomicBlock/reductiveDataProcessingFunctional3D.cpp" />
 		<Unit filename="../src/atomicBlock/reductiveDataProcessorWrapper2D.cpp" />
 		<Unit filename="../src/atomicBlock/reductiveDataProcessorWrapper3D.cpp" />
+		<Unit filename="../src/basicDynamics_/dynamicsProcessor3DCImpl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/basicDynamics_/dynamicsProcessor3DCImpl.h" />
+		<Unit filename="../src/basicDynamics_/dynamicsProcessor3DInC.h" />
+		<Unit filename="../src/basicDynamics_/dynamicsProcessor3DInC.hh" />
+		<Unit filename="../src/basicDynamics_/isoThermalDynamicsCImpl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/basicDynamics_/isoThermalDynamicsCImpl.h" />
+		<Unit filename="../src/basicDynamics_/isoThermalDynamicsInC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/basicDynamics_/isoThermalDynamicsInC.h" />
 		<Unit filename="../src/complexDynamics/carreauGlobalDefs.cpp" />
 		<Unit filename="../src/core/block2D.cpp" />
 		<Unit filename="../src/core/block3D.cpp" />
@@ -90,6 +102,23 @@
 		<Unit filename="../src/core/processorIdentifiers3D.cpp" />
 		<Unit filename="../src/core/runTimeDiagnostics.cpp" />
 		<Unit filename="../src/core/serializer.cpp" />
+		<Unit filename="../src/core_/blockStatisticsInC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/core_/blockStatisticsInC.h" />
+		<Unit filename="../src/core_/cellCImpl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/core_/cellCImpl.h" />
+		<Unit filename="../src/core_/dynamicsCImpl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/core_/dynamicsCImpl.h" />
+		<Unit filename="../src/core_/dynamicsInC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/core_/dynamicsInC.h" />
+		<Unit filename="../src/core_/globalDefsInC.h" />
 		<Unit filename="../src/dataProcessors/metaStuffFunctional2D.cpp" />
 		<Unit filename="../src/dataProcessors/metaStuffFunctional3D.cpp" />
 		<Unit filename="../src/dataProcessors/metaStuffWrapper2D.cpp" />
@@ -109,6 +138,26 @@
 		<Unit filename="../src/io/utilIO_3D.cpp" />
 		<Unit filename="../src/io/vtkDataOutput.cpp" />
 		<Unit filename="../src/io/vtkStructuredDataOutput.cpp" />
+		<Unit filename="../src/latticeBoltzmann_/basicRoutineInC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/latticeBoltzmann_/basicRoutineInC.h" />
+		<Unit filename="../src/latticeBoltzmann_/descriptorInC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/latticeBoltzmann_/descriptorInC.h" />
+		<Unit filename="../src/latticeBoltzmann_/dynamicsTemplatesInC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/latticeBoltzmann_/dynamicsTemplatesInC.h" />
+		<Unit filename="../src/latticeBoltzmann_/latticeTemplatesInC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/latticeBoltzmann_/latticeTemplatesInC.h" />
+		<Unit filename="../src/latticeBoltzmann_/roundOffPolicyCImpl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/latticeBoltzmann_/roundOffPolicyCImpl.h" />
 		<Unit filename="../src/libraryInterfaces/TINYXML_xmlIO.cpp" />
 		<Unit filename="../src/multiBlock/combinedStatistics.cpp" />
 		<Unit filename="../src/multiBlock/domainManipulation2D.cpp" />
@@ -156,6 +205,8 @@
 		<Unit filename="../src/multiPhysics/bubbleMatch3D.cpp" />
 		<Unit filename="../src/offLattice/domainClustering3D.cpp" />
 		<Unit filename="../src/offLattice/marchingCube.cpp" />
+		<Unit filename="../src/palabos3DInC.h" />
+		<Unit filename="../src/palabos3DInC.hh" />
 		<Unit filename="../src/parallelism/mpiManager.cpp" />
 		<Unit filename="../src/parallelism/parallelBlockCommunicator2D.cpp" />
 		<Unit filename="../src/parallelism/parallelBlockCommunicator3D.cpp" />

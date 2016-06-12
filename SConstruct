@@ -73,6 +73,7 @@ if usePOSIX:
 env = Environment ( ENV       = os.environ,
                     CXX       = compiler,
                     CXXFLAGS  = flags,
+	            CFLAGS    = ['-std=c99', '-Wall', '-Wnon-virtual-dtor', '-g', '-DPLB_DEBUG', '-DPLB_MPI_PARALLEL', '-DPLB_USE_POSIX' ],
                     LINKFLAGS = linkFlags,
                     CPPPATH   = allPaths
                   )
@@ -87,8 +88,16 @@ sourceFiles = []
 for srcDir in glob.glob(palabosRoot+'/src/*'):
     sourceFiles.extend(glob.glob(srcDir+'/*.cpp'))
 
+for srcDir in glob.glob(palabosRoot+'/src/*'):
+    sourceFiles.extend(glob.glob(srcDir+'/*.c'))
+
 for srcDir in srcPaths:
     sourceFiles.extend(glob.glob(srcDir+'/*.cpp'))
+
+"""
+for srcDir in srcPaths:
+    sourceFiles.extend(glob.glob(srcDir+'/*.c'))
+"""
 
 sourceFiles.extend(glob.glob(palabosRoot+'/externalLibraries/tinyxml/*.cpp'));
 
